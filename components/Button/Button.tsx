@@ -2,8 +2,9 @@ import React from 'react';
 import styles from './Button.module.css';
 import ButtonProps from './Button.props';
 import cn from 'classnames';
+import ArrowIcon from './assets/buttonArrow.svg';
 
-const Button = ({ appearance = 'primary', children, className, ...props }: ButtonProps) => {
+const Button = ({ appearance = 'primary', arrow = 'none', children, className, ...props }: ButtonProps) => {
   return (
     <button
       className={
@@ -12,6 +13,9 @@ const Button = ({ appearance = 'primary', children, className, ...props }: Butto
       {...props}
     >
       {children}
+      {arrow !== 'none' && <span className={cn(styles.arrow, { [styles.arrow]: arrow === 'down' })}>
+        <ArrowIcon />
+      </span>}
     </button>
   );
 };

@@ -1,7 +1,7 @@
 import { getDetailedProps } from "@/types/utils";
 import { ReactNode } from "react";
 
-export interface HtagProps extends getDetailedProps<HTMLHeadingElement> {
-  Tag: 'h1'|'h2'|'h3'
+export interface ParagraphProps extends getDetailedProps<HTMLParagraphElement> {
+  size?: 's' | 'm' | 'l'
   children: ReactNode
 }

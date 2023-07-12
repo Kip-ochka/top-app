@@ -1,0 +1,19 @@
+.filled {
+  fill:var(--primary);
+  transition: all 0.2s
+}
+
+.span {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+
+.star {
+  margin: auto;
+}
+
+.editable {
+  border-radius: 2rem;
+  cursor: pointer;
+}

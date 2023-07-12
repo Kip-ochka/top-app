@@ -1,14 +1,11 @@
-import Htag from '@/components/Htag/Htag';
-import styles from './page.module.css';
-import Button from '@/components/Button/Button';
+import { withLayout } from "@/Layout/Layout";
 
-export default function Home() {
+function Home() {
   return (
     <main>
-
-      <Htag Tag='h3'>lol</Htag>
-      <Button appearance='primary'>lol</Button>
-      <Button appearance='ghost'>lol</Button>
+      Главная страница
     </main>
   );
 }
+
+export default withLayout(Home);
